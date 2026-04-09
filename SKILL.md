@@ -227,15 +227,32 @@ The following transitional and attribution phrases are **standard academic writi
 
 ## STYLE PATTERNS
 
-### 13. Em Dash Overuse
+### 13. Em Dash Elimination (ZERO TOLERANCE)
 
-**Problem:** LLMs use em dashes (—) more than humans, mimicking "punchy" sales writing.
+**Rule: Replace ALL em dashes (—) in the text. No exceptions. Not even one.**
 
-**Before:**
+**Problem:** Em dashes are one of the most recognizable markers of AI-generated text. LLMs insert them far more frequently than human writers. Even a single em dash flags a document as potentially AI-written. Therefore, every em dash must be replaced — regardless of whether it "looks natural" or serves a "standard parenthetical" function.
+
+**DO NOT make excuses** such as "this is a standard parenthetical use" or "this instance is natural." There is no acceptable use of em dashes in humanized output. If you find yourself thinking "this one is fine," you are wrong — replace it.
+
+**Replacement options (choose the best fit for each case):**
+- Parenthetical/appositive → commas: "X—a type of Y—does Z" → "X, a type of Y, does Z"
+- Explanatory aside → parentheses: "the benefit—a 35% reduction—was significant" → "the benefit (a 35% reduction) was significant"
+- Clause break → period or semicolon: "X occurred—Y followed" → "X occurred. Y followed"
+
+**Before (multiple em dashes):**
 > SGLT2 inhibitors—a relatively new drug class—have transformed heart failure treatment. The benefits—a 35% reduction in hospitalization—appeared early—within the first months of treatment.
 
 **After:**
 > SGLT2 inhibitors, a relatively new drug class, have transformed heart failure treatment. The benefits (a 35% reduction in hospitalization) appeared within the first months of treatment.
+
+**Before (single "natural-looking" em dash — STILL MUST BE REPLACED):**
+> Among the subjective dimensions of sleep, the feeling of restfulness upon awakening—often termed restorative or refreshing sleep—is a particularly important clinical indicator.
+
+**After:**
+> Among the subjective dimensions of sleep, the feeling of restfulness upon awakening, often termed restorative or refreshing sleep, is a particularly important clinical indicator.
+
+**Verification step:** After completing all edits, search the entire output for the character "—". If any remain, replace them. Your output must contain zero em dashes.
 
 ---
 
@@ -406,7 +423,8 @@ The following transitional and attribution phrases are **standard academic writi
    - Maintains data integrity (numbers, statistics, findings)
    - Uses simple constructions (is/are/has) where appropriate
    - Avoids promotional or inflated language
-5. Present the humanized version
+5. **MANDATORY FINAL CHECK:** Search your output for the em dash character "—". If ANY remain, replace them immediately. Zero em dashes allowed in final output.
+6. Present the humanized version
 
 ## Output Format
 
@@ -433,7 +451,7 @@ Provide:
 > The diagnosis of heart failure at baseline was based solely on the report of investigators, with no measures of cardiac function or biomarkers recorded. Empagliflozin reduced heart failure hospitalization and cardiovascular death when added to standard care. The benefit was consistent in patients with and without heart failure at baseline.
 
 **Changes made:**
-- Removed the em dash ("—")
+- Eliminated all em dashes ("—") per Pattern 13 zero-tolerance rule
 - Removed significance inflation ("pivotal challenge", "evolving landscape", "groundbreaking", "cornerstone")
 - Removed promotional language ("profound impact", "remarkable finding", "exciting findings")
 - Removed unsupported vague attributions ("Studies have shown" with no citation) and replaced with specific trial name (note: "Prior studies have shown that..." followed by citations would be preserved)
