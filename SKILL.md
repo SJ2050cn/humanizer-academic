@@ -1,6 +1,6 @@
 ---
 name: humanizer_academic
-version: 1.1.1
+version: 1.1.2
 description: |
   Remove signs of AI-generated writing from academic medical papers. Use when editing
   or reviewing manuscripts to make them sound more natural and professionally written.

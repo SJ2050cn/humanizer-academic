@@ -72,7 +72,7 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 
 | # | Pattern | Before | After |
 |---|---------|--------|-------|
-| 13 | **Em dash overuse** | "benefits—a 35% reduction—appeared early—" | Use commas or parentheses |
+| 13 | **Em dash elimination (zero tolerance)** | "benefits—a 35% reduction—appeared early—" | Use commas, parentheses, or periods. ALL em dashes removed, no exceptions |
 | 14 | **Title Case Headings** | "Statistical Analysis And Primary Endpoints" | "Statistical analysis and primary endpoints" |
 | 15 | **Curly quotes** | \u201cclinically significant\u201d | "clinically significant" |
 
@@ -128,6 +128,7 @@ Examples for Patterns 19–23 are based on the author's (K. Matsui) observations
 
 ## Version History
 
+- **1.1.2** - Pattern 13: Em dash rule upgraded to zero-tolerance elimination (no exceptions, mandatory final check step)
 - **1.1.1** - Merged compressed noun-dash phrases and vague abstractions into single "Artificially condensed expressions" pattern (23)
 - **1.1.0** - Added LLM-specific word choice patterns (19-23), preserved legitimate academic phrases, fixed hedging guidance consistency
 - **1.0.0** - Initial release adapted for academic medical writing
