@@ -1,13 +1,13 @@
 ---
 name: humanizer_academic
-version: 1.1.2
+version: 1.1.3
 description: |
   Remove signs of AI-generated writing from academic medical papers. Use when editing
   or reviewing manuscripts to make them sound more natural and professionally written.
   Based on Wikipedia's "Signs of AI writing" guide, adapted for medical literature.
   Detects and fixes patterns including: inflated significance claims, superficial
   -ing analyses, vague attributions, AI vocabulary words, copula avoidance,
-  excessive hedging, generic conclusions, informal word choices (linked/beyond/via),
+  excessive hedging, generic conclusions, informal word choices (linked/beyond/via/where/yield),
   overly assertive causal claims, and artificially condensed expressions.
   Preserves legitimate academic transitions (Notably, Prior studies have shown, etc.).
 allowed-tools:
@@ -406,9 +406,37 @@ The following transitional and attribution phrases are **standard academic writi
 > Bidirectional associations between screen use before sleep and weekday sleep duration suggest mutual reinforcement.
 
 **After:**
-> Bidirectional associations between screen use before sleep and weekday sleep duration suggest a potentially self-reinforcing cycle in which each may exacerbate the other.
+> Bidirectional associations between screen use before sleep and weekday sleep duration suggest a potentially self-reinforcing cycle, with each behavior possibly exacerbating the other.
 
 **Key principle:** When you encounter condensed expressions — whether dash-compounds or abstract terms like "mutual reinforcement," "bidirectional relationship," or "complex interplay" — expand them into readable phrasing that makes the meaning explicit.
+
+---
+
+### 24. Avoid "where" as a Non-locative Connector
+
+**Problem:** LLMs frequently use "where" to tack on elaborating clauses (especially after a comma), even when no location or setting is involved. In academic medical writing, this reads as awkward and informal. Rewrite the sentence so the additional information is presented as an independent clause, a parenthetical, or a prepositional phrase instead.
+
+**Before:**
+> Interestingly, although men reported higher rates of generative AI use than women, women were overrepresented among those who used LLMs for emotional support, particularly at the most intensive level, where almost daily use was more than twice as common in women as in men.
+
+**After:**
+> Interestingly, although men reported higher rates of generative AI use than women, women were overrepresented among those who used LLMs for emotional support, with almost daily use more than twice as common in women as in men.
+
+**Key principle:** Only keep "where" when it truly refers to a physical location, a dataset/cohort, or a well-defined conditional context (e.g., "in trials where blinding was not feasible"). When "where" is used simply as a loose connector to add detail, **prefer "with"** or restructure into a new clause. Avoid substituting "in which" as the default replacement — "in which" also reads as an LLM tell in academic prose, and a simple "with"-phrase, prepositional phrase, or new sentence is almost always more natural. Reserve "in which" for cases where no other construction works.
+
+---
+
+### 25. Avoid "yield" as a Result Verb
+
+**Problem:** LLMs overuse "yield" (e.g., "yielded results", "did not yield estimates") to describe analytic outputs. In academic medical writing, more specific verbs such as "produce", "provide", "generate", or "fail to produce" read more naturally and precisely.
+
+**Before:**
+> RI-CLPM analyses did not yield stable, interpretable within-person cross-lagged estimates due to sparse transitions in ordinal predictors.
+
+**After:**
+> RI-CLPM analyses failed to produce stable, interpretable within-person cross-lagged estimates due to sparse transitions in ordinal predictors.
+
+**Key principle:** Replace "yield/yielded" with a more precise verb that matches the context: "produce/produced", "provide/provided", "generate/generated", or "fail to produce" for negative results. Reserve "yield" for contexts where it is genuinely standard (e.g., chemical/biochemical yields).
 
 ---
 

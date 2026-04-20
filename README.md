@@ -44,7 +44,7 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 
 > "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
 
-## 23 Patterns Detected (with Before/After Examples)
+## 25 Patterns Detected (with Before/After Examples)
 
 ### Content Patterns
 
@@ -92,7 +92,9 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 | 20 | **"Beyond" → "In addition to"** | "Beyond the association with..." | "In addition to the association with..." |
 | 21 | **"via" → "through"** | "obtained via the online form" | "obtained through an online form" |
 | 22 | **Insufficient hedging** | "may reduce the risk of..." | "may help reduce the risk of..." |
-| 23 | **Artificially condensed expressions** | "fatigue–sleepiness cycle", "mutual reinforcement" | "cycle of fatigue and sleepiness", "a self-reinforcing cycle in which each may exacerbate the other" |
+| 23 | **Artificially condensed expressions** | "fatigue–sleepiness cycle", "mutual reinforcement" | "cycle of fatigue and sleepiness", "a self-reinforcing cycle, with each behavior possibly exacerbating the other" |
+| 24 | **"where" as a non-locative connector** | "...at the most intensive level, where almost daily use was..." | "...at the most intensive level, with almost daily use..." |
+| 25 | **"yield" as a result verb** | "did not yield stable estimates" | "failed to produce stable estimates" |
 
 ### Preserved Academic Phrases (v1.1.0)
 
@@ -124,10 +126,19 @@ Medical paper examples (Patterns 1–18) are adapted from:
 
 This article is published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
-Examples for Patterns 19–23 are based on the author's (K. Matsui) observations during academic manuscript editing in sleep medicine research.
+Examples for Patterns 19–25 are based on the author's (K. Matsui) observations during academic manuscript editing in sleep medicine research.
+
+## Related Work by the Author
+
+> Matsui K. Delving Into PubMed Records: How AI-Influenced Vocabulary has Transformed Medical Writing since ChatGPT. *Perspect Med Educ*. 2025 Dec 2;14(1):882-890. doi:[10.5334/pme.1929](https://doi.org/10.5334/pme.1929)
+
+これは私が書いた論文で、PubMedの情報から、ChatGPTを含めたLLMが多用すると考えられた単語の使用頻度を定量化したものです。興味があったら読んでみてね！
+
+![Figure 1 from Matsui 2025 — AI-influenced vocabulary trends in PubMed](2025_Matsui_Delving_into_PubMed_Records_Fig1.png)
 
 ## Version History
 
+- **1.1.3** - Added patterns 24 ("where" as a non-locative connector) and 25 ("yield" as a result verb); added author paper reference and Fig.1 to README
 - **1.1.2** - Pattern 13: Em dash rule upgraded to zero-tolerance elimination (no exceptions, mandatory final check step)
 - **1.1.1** - Merged compressed noun-dash phrases and vague abstractions into single "Artificially condensed expressions" pattern (23)
 - **1.1.0** - Added LLM-specific word choice patterns (19-23), preserved legitimate academic phrases, fixed hedging guidance consistency
