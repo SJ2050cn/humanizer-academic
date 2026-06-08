@@ -33,8 +33,9 @@ When given text to humanize:
 1. **Identify AI patterns** - Scan for the patterns listed below
 2. **Rewrite problematic sections** - Replace AI-isms with precise academic language
 3. **Preserve meaning** - Keep the scientific content and data intact
-4. **Maintain academic tone** - Match the formal, objective style of scientific journals
-5. **Be specific** - Replace vague claims with concrete data and citations
+4. **Maintain similar length** - Keep the rewritten text within 80%-120% of the original word count
+5. **Maintain academic tone** - Match the formal, objective style of scientific journals
+6. **Be specific** - Replace vague claims with concrete data and citations
 
 ## IMPORTANT: Preserve Legitimate Academic Phrases
 
