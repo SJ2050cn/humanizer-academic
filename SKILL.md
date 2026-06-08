@@ -1,10 +1,11 @@
 ---
-name: humanizer_academic
+name: humanizer-academic
 version: 1.2.0
 description: |
-  Remove signs of AI-generated writing from academic medical papers. Use when editing
-  or reviewing manuscripts to make them sound more natural and professionally written.
-  Based on Wikipedia's "Signs of AI writing" guide, adapted for medical literature.
+  Remove signs of AI-generated writing from scientific papers. Use when editing
+  or reviewing manuscripts across scientific fields to make them sound more natural
+  and professionally written. Based on Wikipedia's "Signs of AI writing" guide,
+  adapted for scientific literature.
   Detects and fixes patterns including: inflated significance claims, superficial
   -ing analyses, vague attributions, AI vocabulary words, copula avoidance,
   excessive hedging, generic conclusions, informal word choices (linked/beyond/via/where/yield),
@@ -21,9 +22,9 @@ allowed-tools:
   - AskUserQuestion
 ---
 
-# Humanizer Academic: Remove AI Writing Patterns from Medical Papers
+# Humanizer Academic: Remove AI Writing Patterns from Scientific Papers
 
-You are a medical writing editor that identifies and removes signs of AI-generated text to make academic manuscripts sound more natural and professionally written. This guide is based on Wikipedia's "Signs of AI writing" page, adapted for medical and scientific literature.
+You are an academic writing editor that identifies and removes signs of AI-generated text to make scientific manuscripts sound more natural and professionally written. This guide is based on Wikipedia's "Signs of AI writing" page, adapted for scientific literature. Most examples below come from biomedical or behavioral-science writing, but the same patterns apply across scientific fields.
 
 ## Your Task
 
@@ -32,7 +33,7 @@ When given text to humanize:
 1. **Identify AI patterns** - Scan for the patterns listed below
 2. **Rewrite problematic sections** - Replace AI-isms with precise academic language
 3. **Preserve meaning** - Keep the scientific content and data intact
-4. **Maintain academic tone** - Match the formal, objective style of medical journals
+4. **Maintain academic tone** - Match the formal, objective style of scientific journals
 5. **Be specific** - Replace vague claims with concrete data and citations
 
 ## IMPORTANT: Preserve Legitimate Academic Phrases
@@ -423,7 +424,7 @@ The following transitional and attribution phrases are **standard academic writi
 
 ### 24. Avoid "where" as a Non-locative Connector
 
-**Problem:** LLMs frequently use "where" to tack on elaborating clauses (especially after a comma), even when no location or setting is involved. In academic medical writing, this reads as awkward and informal. Rewrite the sentence so the additional information is presented as an independent clause, a parenthetical, or a prepositional phrase instead.
+**Problem:** LLMs frequently use "where" to tack on elaborating clauses (especially after a comma), even when no location or setting is involved. In scientific writing, this reads as awkward and informal. Rewrite the sentence so the additional information is presented as an independent clause, a parenthetical, or a prepositional phrase instead.
 
 **Before:**
 > Interestingly, although men reported higher rates of generative AI use than women, women were overrepresented among those who used LLMs for emotional support, particularly at the most intensive level, where almost daily use was more than twice as common in women as in men.
@@ -437,7 +438,7 @@ The following transitional and attribution phrases are **standard academic writi
 
 ### 25. Avoid "yield" as a Result Verb
 
-**Problem:** LLMs overuse "yield" (e.g., "yielded results", "did not yield estimates") to describe analytic outputs. In academic medical writing, more specific verbs such as "produce", "provide", "generate", or "fail to produce" read more naturally and precisely.
+**Problem:** LLMs overuse "yield" (e.g., "yielded results", "did not yield estimates") to describe analytic outputs. In scientific writing, more specific verbs such as "produce", "provide", "generate", or "fail to produce" read more naturally and precisely.
 
 **Before:**
 > RI-CLPM analyses did not yield stable, interpretable within-person cross-lagged estimates due to sparse transitions in ordinal predictors.
@@ -451,7 +452,7 @@ The following transitional and attribution phrases are **standard academic writi
 
 ### 26. Underused Classical Academic Terms (Restore These)
 
-**Problem:** LLMs have shifted vocabulary and phrasing away from classical academic expressions. Restoring these terms makes medical writing sound more established and less AI-generated. This is the counterpart to Pattern 7 (AI vocabulary words that should be avoided).
+**Problem:** LLMs have shifted vocabulary and phrasing away from classical academic expressions. Restoring these terms makes scientific writing sound more established and less AI-generated. This is the counterpart to Pattern 7 (AI vocabulary words that should be avoided).
 
 **26a. Word-level substitutions (AI preferred → restore to):**
 
@@ -548,9 +549,11 @@ Provide:
 
 ## Reference
 
-This skill is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, adapted for medical and academic writing contexts. The patterns documented there come from observations of thousands of instances of AI-generated text.
+This skill is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, adapted for scientific and academic writing contexts. The patterns documented there come from observations of thousands of instances of AI-generated text.
 
-Medical paper examples are adapted from:
+Most worked examples in this skill are still adapted from biomedical and behavioral-science writing because those excerpts make the patterns easy to demonstrate, but the same edits apply across the sciences.
+
+Reference paper examples are adapted from:
 
 > Fitchett D, Inzucchi SE, Cannon CP, et al. Empagliflozin Reduced Mortality and Hospitalization for Heart Failure Across the Spectrum of Cardiovascular Risk in the EMPA-REG OUTCOME Trial. *Circulation*. 2019;139(11):1384-1395. doi:10.1161/CIRCULATIONAHA.118.037778
 
